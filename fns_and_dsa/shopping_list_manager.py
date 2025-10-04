@@ -20,11 +20,18 @@ def main():
                 print("Item name cannot be empty.")
         elif choice == '2':
             item = input("Enter the item to remove:")
-            shopping_list.remove(item)
-            pass
+            if item in shopping_list:
+                shopping_list.remove(item)
+                print(f"'{item}' has been removed from your shopping list.")
+            else:
+                    print(f"'{item}' is not in your shopping list.")
         elif choice == '3':
-            print(shopping_list)
-            pass
+            if not shopping_list:
+                print("Your shopping list is currently empty.")
+            else:
+                print("\nYour Shopping List:")
+                for i, item in enumerate(shopping_list, start=1):
+                    print(f"{i}. {item}")
         elif choice == '4':
             print("Goodbye!")
             break
