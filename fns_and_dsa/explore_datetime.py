@@ -2,7 +2,8 @@ import datetime, timedelta from datetime
 
 def display_current_datetime():
   current_date = datetime.now()
-  print("Today's date and time:", current_date.strftime("%Y, %m %d, %H:%M:%S"))
+  formatted = now.strftime("%Y-%m-%d %H:%M:%S")
+  print("Current date and time:", formatted)
 
 days_to_add = input("enter a number of days (as an integer):")
 
