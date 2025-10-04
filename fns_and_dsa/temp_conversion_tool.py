@@ -22,7 +22,7 @@ def main():
         if unit in ("C", "F"):
             break
         else:
-            print("Invalid choice. Please enter 'C' or 'F'.")
+            print("Invalid temperature. Please enter a numeric value.")
 if unit == "C":
         converted = convert_to_fahrenheit().temperature
         print(f"{temp}°C is {converted}°F")
