@@ -2,7 +2,7 @@ def safe_divide(numerator, denominator):
   try:
         num = float(numerator)
         den = float(denominator)
-    except ValueError:
+  except ValueError:
         return "Error: Please enter numeric values only."
     
     try:
