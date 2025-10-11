@@ -5,8 +5,8 @@ def safe_divide(numerator, denominator):
   except ValueError:
         return "Error: Please enter numeric values only."
     
-    try:
+  try:
         result = num / den
         return str(result)
-    except ZeroDivisionError:
+  except ZeroDivisionError:
         return "Error: Cannot divide by zero."
