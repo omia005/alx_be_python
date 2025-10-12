@@ -28,7 +28,7 @@ class Library:
        else:
         raise TypeError("Only instances of Book or its subclasses can be added.")
 
-  def list_book(self):
+  def list_books(self):
     if not self.books:
         print("The library is empty.")
     else:
