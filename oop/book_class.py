@@ -4,7 +4,7 @@ class Book:
      self.author = author
 
   def __del__(self):
-      return f"Deleting {title}"
+      return f"Deleting {self.title}"
 
   def __str__(self):
       return  f"{self.title} by {self.author} published in {self.year}"
